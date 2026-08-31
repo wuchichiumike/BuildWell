@@ -11,7 +11,7 @@ Commands:
 * make frontend (Access at http://localhost:5173)
 
 The make command must be executed inside the project directory. If your terminal is not currently in the project directory, run:
-make -C "/Users/mikewu/Desktop/海之子" dev
+make -C "{project_path}" dev
 
 The backend defaults to a local SQLite demo database, loading reproducible demo data for P001 upon startup. The current storage layer uses an SQLite demo adapter; production deployments require replacing it with a PostgreSQL/SQLAlchemy adapter and replacing file storage and evidence adapters with their actual implementations.
 

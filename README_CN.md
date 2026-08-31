@@ -13,7 +13,7 @@ make frontend    # http://localhost:5173
 `make` 必须在项目目录运行。若终端当前不在项目目录，可直接使用：
 
 ```bash
-make -C "/Users/mikewu/Desktop/海之子" dev
+make -C "{项目文件夹地址}" dev
 ```
 
 后端默认使用本地 SQLite 演示库，启动时会加载 `P001` 的可重复演示数据。当前仓储层是 SQLite demo adapter；生产部署需要替换为 PostgreSQL/SQLAlchemy adapter，并将文件存储/证据适配器替换为对应实现。
